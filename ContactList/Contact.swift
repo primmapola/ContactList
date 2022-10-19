@@ -31,4 +31,6 @@ struct Contact {
         }
         return contacts
     }
+    
+    static var randomContacts = getContacts()
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     
-    private var contactList =  Contact.getContacts()
+    private var contactList =  Contact.randomContacts
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,5 +53,5 @@ class ContactListViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         detailVC?.contact = contactList[indexPath.row]
     }
-
+    
 }
