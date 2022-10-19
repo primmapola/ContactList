@@ -14,7 +14,6 @@ struct Contact {
     var mail: String
     
     
-    
     static func getContacts() -> [Contact] {
         var contacts = [Contact]()
         for _ in 0...5 {
